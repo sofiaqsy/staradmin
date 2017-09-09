@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    comiensa el curso
                 </div>
 
                 <div class="links">
