@@ -6,5 +6,14 @@ use Illuminate\Http\Request;
 
 class VentasController extends Controller
 {
-    //
+  public function __construct()
+  {
+
+  }
+
+  public function index()
+  {
+    return view('productos.list-productos');
+
+  }
 }

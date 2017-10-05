@@ -17,6 +17,7 @@ class ProductosController extends Controller
 
   public function index()
   {
+    return view('productos.list-productos');
 
   }
 
@@ -36,6 +37,11 @@ class ProductosController extends Controller
   }
 
   public function edit()
+  {
+      return view('productos.list-productos');
+  }
+
+  public function update()
   {
       return view('productos.list-productos');
   }

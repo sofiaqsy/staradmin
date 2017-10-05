@@ -59,11 +59,11 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a><i class="fa fa-home"></i> Home </a></li>
-                  <li><a><i class="fa fa-edit"></i> Ventas </a></li>
-                  <li><a><i class="fa fa-desktop"></i> Compras </a></li>
-                  <li><a><i class="fa fa-table"></i> Productos </a></li>
-                  <li><a><i class="fa fa-bar-chart-o"></i> Usuarios </a></li>
+                  <li><a href="/"><i class="fa fa-home"></i> Home </a></li>
+                  <li><a href="/ventas"><i class="fa fa-edit"></i> Ventas </a></li>
+                  <li><a href="/compras"><i class="fa fa-desktop"></i> Compras </a></li>
+                  <li><a href="/productos"><i class="fa fa-table"></i> Productos </a></li>
+                  <li><a href="/usuarios"><i class="fa fa-bar-chart-o"></i> Usuarios </a></li>
                 </ul>
               </div>
             </div>

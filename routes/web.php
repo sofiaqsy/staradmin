@@ -15,8 +15,13 @@
 
 Auth::routes();
 
-Route::resource('home/','HomeController');
+Route::resource('/','HomeController');
+
+Route::resource('login/','HomeController');
+
 Route::resource('compras/','ComprasController');
 Route::resource('productos/', 'ProductosController');
+Route::resource('ventas/','VentasController');
+Route::resource('usuarios/', 'UsuariosController');
 
 Route::get('productos/list','ProductosController@list_productos');
