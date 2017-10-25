@@ -16,12 +16,21 @@
 Auth::routes();
 
 Route::resource('/','HomeController');
-
 Route::resource('login/','HomeController');
 
 Route::resource('compras/','ComprasController');
-Route::resource('productos/', 'ProductosController');
-Route::resource('ventas/','VentasController');
-Route::resource('usuarios/', 'UsuariosController');
+Route::get('compras/list','ComprasController@listComprasAction');
 
-Route::get('productos/list','ProductosController@list_productos');
+
+Route::resource('ventas/','VentasController');
+Route::get('ventas/list','VentasController@listVentaAction');
+
+
+Route::resource('usuarios/', 'UsuariosController');
+Route::get('usuarios/form-usuario','UsuariosController@formUsuarioAction');
+
+
+Route::resource('productos/', 'ProductosController');
+Route::get('productos/categorias','ProductosController@listCategoriasAction');
+Route::get('productos/form-producto','ProductosController@formProductoAction');
+Route::get('productos/form-categoria','ProductosController@formCategoriaAction');

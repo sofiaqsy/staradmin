@@ -4,9 +4,9 @@
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px">
             <div class="col-md-12" role="" data-example-id="togglable-tabs">
               <ul id="myTab" class="nav nav-tabs " role="tablist">
-                <li class="active" ><a href="/productos">Productos</a>
+                <li><a href="/productos">Productos</a>
                 </li>
-                <li><a href="/productos/categorias">Categorias</a>
+                <li class="active"><a href="/productos/categorias">Categorias</a>
                 </li>
               </ul>
             </div>
@@ -29,10 +29,9 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Código</th>
                           <th>Nombre</th>
-                          <th>Stock</th>
-                          <th>Estado</th>
+                          <th>Descripción</th>
+                          <th>Condición</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -40,20 +39,17 @@
                           <th scope="row">1</th>
                           <td>Mark</td>
                           <td>Otto</td>
-                          <td>Mark</td>
                           <td>@mdo</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Jacob</td>
                           <td>Thornton</td>
-                          <td>Jacob</td>
                           <td>@fat</td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td>Larry</td>
-                          <td>the Bird</td>
                           <td>the Bird</td>
                           <td>@twitter</td>
                         </tr>

@@ -21,6 +21,24 @@ class ProductosController extends Controller
 
   }
 
+  public function listCategoriasAction()
+  {
+    return view('productos.list-categorias');
+
+  }
+
+  public function formProductoAction()
+  {
+    return view('productos.form-producto');
+
+  }
+
+  public function formCategoriaAction()
+  {
+    return view('productos.form-categoria');
+
+  }
+
   public function create()
   {
       return view('productos.list-productos');

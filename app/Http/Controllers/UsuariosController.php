@@ -13,7 +13,13 @@ class UsuariosController extends Controller
 
   public function index()
   {
-    return view('usuarios.list');
+    return view('usuarios.list-usuarios');
+
+  }
+
+  public function formUsuarioAction()
+  {
+    return view('usuarios.form-usuario');
 
   }
 }

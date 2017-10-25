@@ -5,9 +5,9 @@
         <ul id="myTab" class="nav nav-tabs " role="tablist">
           <li><a href="/productos">Productos</a>
           </li>
-          <li><a href="/productos/categorias">Categorias</a>
+          <li ><a href="/productos/categorias">Categorias</a>
           </li>
-          <li class="active" ><a href="#">Crear producto</a>
+          <li class="active"><a href="#">Crear categoria</a>
           </li>
         </ul>
       </div>
@@ -15,7 +15,7 @@
 <div class="col-md-12 col-xs-12">
   <br>
   <div class="col-md-3">
-INFORMACION DE PRODUCTO
+INFORMACION DE CATEGORIA
   </div>
   <div class="col-md-9">
     <div class="x_panel">
@@ -43,25 +43,6 @@ INFORMACION DE PRODUCTO
                </select>
            </div>
 
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="col-md-12 col-xs-12">
-  <br>
-  <div class="col-md-3">
-IMAGEN DE PRODUCTO
-  </div>
-  <div class="col-md-9">
-    <div class="x_panel">
-      <div class="x_content">
-        <div class="col-md-12">
-           <div class="form-group">
-             <label class="control-label" for="last-name">Imagen<span class="required">*</span>
-             </label>
-               <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
-           </div>
         </div>
       </div>
     </div>

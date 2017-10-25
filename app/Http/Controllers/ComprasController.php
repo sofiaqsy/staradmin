@@ -13,7 +13,14 @@ class ComprasController extends Controller
 
   public function index()
   {
-    return view('productos.list-productos');
-
+    return view('compras.compras');
   }
+
+  public function listComprasAction()
+  {
+    return view('compras.list-compras');
+  }
+
+
+
 }
