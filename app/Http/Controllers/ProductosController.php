@@ -4,8 +4,9 @@ namespace staradmin\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use sisVentas\Categoria;
+use staradmin\Categoria;
 use Illuminate\Support\Facades\Redirect;
+use staradmin\Http\Requests\CategoriaFormRequest;
 use DB;
 
 class ProductosController extends Controller
@@ -15,15 +16,10 @@ class ProductosController extends Controller
 
   }
 
-  public function index()
+  public function index(Request $request)
   {
+    
     return view('productos.list-productos');
-
-  }
-
-  public function listCategoriasAction()
-  {
-    return view('productos.list-categorias');
 
   }
 
@@ -32,37 +28,5 @@ class ProductosController extends Controller
     return view('productos.form-producto');
 
   }
-
-  public function formCategoriaAction()
-  {
-    return view('productos.form-categoria');
-
-  }
-
-  public function create()
-  {
-      return view('productos.list-productos');
-  }
-
-  public function store()
-  {
-      return view('productos.list-productos');
-  }
-
-  public function show()
-  {
-      return view('productos.list-productos');
-  }
-
-  public function edit()
-  {
-      return view('productos.list-productos');
-  }
-
-  public function update()
-  {
-      return view('productos.list-productos');
-  }
-
 
 }

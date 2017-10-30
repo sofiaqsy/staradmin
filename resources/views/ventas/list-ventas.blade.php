@@ -3,7 +3,7 @@
 @section ('contenido')
 
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px">
-            <div class="col-md-12" role="" data-example-id="togglable-tabs">
+            <div class="col-md-12 col-sm-12 col-xs-12" role="" data-example-id="togglable-tabs">
               <ul id="myTab" class="nav nav-tabs " role="tablist">
                 <li><a href="/ventas">Ventas </a>
                 </li>
@@ -16,13 +16,13 @@
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px;">
         <br>
-        <div class="col-md-6">
+        <div class="col-md-6 col-sm-6 col-xs-12">
             <input type="text" class="form-control" placeholder="Search for...">
         </div>
-        <div class="col-md-6">
-          <a href="#"><button class="btn btn-default" type="button">Buscar</button></a>
-          <a href="#"><button class="btn btn-default" type="button">Exportar</button></a>
-          <a href="/productos/form-producto"><button class="btn btn-default" type="button">Nuevo</button></a>
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <a href="#"><button class="btn btn-default col-xs-3" type="button">Buscar</button></a>
+          <a href="#"><button class="btn btn-default col-xs-3" type="button">Exportar</button></a>
+          <a href="/productos/form-producto"><button class="btn btn-default col-xs-3" type="button">Nuevo</button></a>
         </div>
       </div>
 

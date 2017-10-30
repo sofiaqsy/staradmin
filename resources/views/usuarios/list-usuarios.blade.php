@@ -5,7 +5,7 @@
           <ul id="myTab" class="nav nav-tabs " role="tablist">
             <li class="active"><a href="/usuarios">Usuarios</a>
             </li>
-            <li><a href="#tab_content3">Clientes</a>
+            <li><a href="/usuarios/clientes">Clientes</a>
             </li>
           </ul>
         </div>

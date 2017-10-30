@@ -6,22 +6,23 @@
               <ul id="myTab" class="nav nav-tabs " role="tablist">
                 <li><a href="/productos">Productos</a>
                 </li>
-                <li class="active"><a href="/productos/categorias">Categorias</a>
+                <li class="active"><a href="/categorias">Categorias</a>
                 </li>
               </ul>
             </div>
       </div>
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px;">
         <br>
-        <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Search for...">
+        {!! Form::open(array('url'=>'/categorias','method'=>'GET','autocomplete'=>'off','role'=>'search')) !!}
+        <div class="col-md-6 col-sm-6 col-xs-6">
+            <input type="text" class="form-control" placeholder="Search for..." name="searchText">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 col-xs-6" >
           <a href="#"><button class="btn btn-default" type="button">Buscar</button></a>
-          <a href="/productos/form-producto"><button class="btn btn-default" type="button">Nuevo</button></a>
+          <a href="/categorias/form-categoria"><button class="btn btn-default" type="button">Nuevo</button></a>
         </div>
+        {{Form::close()}}
       </div>
-
               <div class="col-md-12 col-sm-12 col-xs-12" style=" margin-top:10px;">
                 <div class="x_panel">
                   <div class="x_content">
@@ -31,31 +32,20 @@
                           <th>#</th>
                           <th>Nombre</th>
                           <th>Descripción</th>
-                          <th>Condición</th>
                         </tr>
                       </thead>
                       <tbody>
+                      @foreach ($categorias as $cat)
                         <tr>
                           <th scope="row">1</th>
-                          <td>Mark</td>
-                          <td>Otto</td>
-                          <td>@mdo</td>
+                          <td>{{ $cat->nombre }}</td>
+                          <td>{{ $cat->descripcion }}</td>
                         </tr>
-                        <tr>
-                          <th scope="row">2</th>
-                          <td>Jacob</td>
-                          <td>Thornton</td>
-                          <td>@fat</td>
-                        </tr>
-                        <tr>
-                          <th scope="row">3</th>
-                          <td>Larry</td>
-                          <td>the Bird</td>
-                          <td>@twitter</td>
-                        </tr>
+                      @endforeach
                       </tbody>
                     </table>
                   </div>
                 </div>
+                {{$categorias->render()}}
               </div>
 @stop

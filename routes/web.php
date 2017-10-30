@@ -31,6 +31,8 @@ Route::get('usuarios/form-usuario','UsuariosController@formUsuarioAction');
 
 
 Route::resource('productos/', 'ProductosController');
-Route::get('productos/categorias','ProductosController@listCategoriasAction');
 Route::get('productos/form-producto','ProductosController@formProductoAction');
-Route::get('productos/form-categoria','ProductosController@formCategoriaAction');
+
+
+Route::resource('categorias/', 'CategoriasController');
+Route::get('categorias/form-categoria','CategoriasController@formCategoriaAction');
