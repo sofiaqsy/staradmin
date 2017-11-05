@@ -13,26 +13,23 @@
 
 
 
+
+
+Route::get('/', function () {
+    return view('auth/login');
+});
+
 Auth::routes();
 
-Route::resource('/','HomeController');
-Route::resource('login/','HomeController');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('categoria','CategoriaController');
+Route::resource('articulo','ArticuloController');
+Route::resource('ventas/cliente','ClienteController');
+Route::resource('compras/proveedor','ProveedorController');
+Route::resource('compras/compra','CompraController');
+Route::resource('ventas/venta','VentaController');
+Route::resource('usuario','UsuarioController');
+Auth::routes();
 
-Route::resource('compras/','ComprasController');
-Route::get('compras/list','ComprasController@listComprasAction');
-
-
-Route::resource('ventas/','VentasController');
-Route::get('ventas/list','VentasController@listVentaAction');
-
-
-Route::resource('usuarios/', 'UsuariosController');
-Route::get('usuarios/form-usuario','UsuariosController@formUsuarioAction');
-
-
-Route::resource('productos/', 'ProductosController');
-Route::get('productos/form-producto','ProductosController@formProductoAction');
-
-
-Route::resource('categorias/', 'CategoriasController');
-Route::get('categorias/form-categoria','CategoriasController@formCategoriaAction');
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/{slug?}', 'VentaController@index');

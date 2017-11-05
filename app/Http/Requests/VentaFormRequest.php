@@ -4,7 +4,7 @@ namespace staradmin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class CategoriaFormRequest extends FormRequest
+class VentaFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,8 +24,15 @@ class CategoriaFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'nombre'=>'required|max:100',
-            'descripcion'=>'max:200',
+            'idcliente'=>'required',
+            'tipo_doc'=>'required|max:2',
+            'serie_doc'=>'max:4',
+            'numero_doc'=>'required|max:8',
+            'idarticulo'=>'required',
+            'cantidad'=>'required',
+            'precio_venta'=>'required',
+            'descuento'=>'required',
+            'total_venta'=>'required'
         ];
     }
 }
