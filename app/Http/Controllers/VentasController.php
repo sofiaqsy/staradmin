@@ -13,7 +13,11 @@ class VentasController extends Controller
 
   public function index()
   {
-    return view('productos.list-productos');
+    return view('ventas.ventas');
+  }
 
+  public function listVentaAction()
+  {
+    return view('ventas.list-ventas');
   }
 }

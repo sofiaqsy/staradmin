@@ -1,12 +1,15 @@
+
 @extends ('layouts.admin')
 @section ('contenido')
 
       <div class="col-md-12 col-sm-12 col-xs-12" style="margin-left:-10px">
             <div class="col-md-12" role="" data-example-id="togglable-tabs">
               <ul id="myTab" class="nav nav-tabs " role="tablist">
-                <li class="active" ><a href="/productos">Productos</a>
+                <li><a href="/ventas">Ventas </a>
                 </li>
-                <li><a href="/productos/categorias">Categorias</a>
+                <li class="active"><a href="/ventas/list">Listado de ventas</a>
+                </li>
+                <li><a href="#tab_content3">Profile</a>
                 </li>
               </ul>
             </div>
@@ -16,8 +19,9 @@
         <div class="col-md-6">
             <input type="text" class="form-control" placeholder="Search for...">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-6">
           <a href="#"><button class="btn btn-default" type="button">Buscar</button></a>
+          <a href="#"><button class="btn btn-default" type="button">Exportar</button></a>
           <a href="/productos/form-producto"><button class="btn btn-default" type="button">Nuevo</button></a>
         </div>
       </div>
@@ -29,10 +33,9 @@
                       <thead>
                         <tr>
                           <th>#</th>
-                          <th>Código</th>
-                          <th>Nombre</th>
-                          <th>Stock</th>
-                          <th>Estado</th>
+                          <th>First Name</th>
+                          <th>Last Name</th>
+                          <th>Username</th>
                         </tr>
                       </thead>
                       <tbody>
@@ -40,20 +43,17 @@
                           <th scope="row">1</th>
                           <td>Mark</td>
                           <td>Otto</td>
-                          <td>Mark</td>
                           <td>@mdo</td>
                         </tr>
                         <tr>
                           <th scope="row">2</th>
                           <td>Jacob</td>
                           <td>Thornton</td>
-                          <td>Jacob</td>
                           <td>@fat</td>
                         </tr>
                         <tr>
                           <th scope="row">3</th>
                           <td>Larry</td>
-                          <td>the Bird</td>
                           <td>the Bird</td>
                           <td>@twitter</td>
                         </tr>
@@ -62,4 +62,6 @@
                   </div>
                 </div>
               </div>
+
+
 @stop

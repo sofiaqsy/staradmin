@@ -39,7 +39,7 @@
             </div>
 
             <div class="clearfix"></div>
-
+          
             <!-- menu profile quick info -->
             <div class="profile clearfix">
               <div class="profile_pic">
@@ -48,10 +48,23 @@
               <div class="profile_info">
                 <span>Welcome,</span>
                 <h2>John Doe</h2>
+                  <ul class="dropdown-menu" role="menu">
+                  <li>
+                      <a href="{{ route('logout') }}"
+                          onclick="event.preventDefault();
+                                   document.getElementById('logout-form').submit();">
+                          Logout
+                      </a>
+
+                      <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                          {{ csrf_field() }}
+                      </form>
+                  </li>
+                  </ul>
               </div>
             </div>
             <!-- /menu profile quick info -->
-
+            
             <br />
 
             <!-- sidebar menu -->
