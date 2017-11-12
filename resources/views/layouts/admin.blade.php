@@ -63,7 +63,9 @@
                     <li><a href="{{url('ventas/venta')}}"><i class="fa fa-edit"></i> Ventas </a></li>
                     <li><a href="{{url('compras/compra')}}"><i class="fa fa-desktop"></i> Compras </a></li>
                     <li><a href="{{url('articulo')}}"><i class="fa fa-table"></i> Productos </a></li>
-                    <li><a href="{{url('usuario')}}"><i class="fa fa-bar-chart-o"></i> Usuarios </a></li>
+                    @if(Auth::user()->name=='administrador')
+                      <li><a href="{{url('usuario')}}"><i class="fa fa-bar-chart-o"></i> Usuarios </a></li>
+                    @endif
                 </ul>
               </div>
             </div>

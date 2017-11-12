@@ -30,6 +30,7 @@ class PdfController extends Controller
         ->join('persona as p','v.idcliente','=','p.idpersona')
         ->join('detalle_venta as d','v.idventa','=','d.idventa')
         ->join('articulo as a','d.idarticulo','=','a.idarticulo')
+        ->where('v.estado','=','A')
         ->select('v.idventa','v.fecha_hora','p.nombre','v.tipo_doc','v.serie_doc','v.numero_doc','v.igv','v.estado',
         'v.total','a.nombre as articulo','d.cantidad','d.descuento','d.precio')->get();
 

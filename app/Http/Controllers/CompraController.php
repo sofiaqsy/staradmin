@@ -29,6 +29,7 @@ class CompraController extends Controller
     		->select('c.idcompra','c.fecha_hora','p.nombre','c.tipo_doc','c.serie_doc','c.numero_doc','c.igv','c.estado',
             DB::raw('sum(d.cantidad*d.precio_compra) as total'))
     		->where('c.numero_doc','LIKE','%'.$query.'%')
+            ->where('c.estado','=','A')
     		->orderBy('c.idcompra','desc')
     		->groupBy('c.idcompra','c.fecha_hora','p.nombre','c.tipo_doc','c.serie_doc','c.numero_doc','c.igv','c.estado')
     		->paginate(7);
