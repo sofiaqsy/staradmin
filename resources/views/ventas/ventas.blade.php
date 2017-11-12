@@ -1,8 +1,8 @@
 @extends ('layouts.admin')
 @section ('contenido')
 
-<div class="col-md-12 col-xs-12">
-        <div class="col-md-12" role="" data-example-id="togglable-tabs">
+<div class="col-md-12 col-xs-12 col-sm-12">
+        <div class="col-md-12 col-xs-12 col-sm-12" role="" data-example-id="togglable-tabs">
           <ul id="myTab" class="nav nav-tabs " role="tablist">
             <li class="active"><a href="/ventas">Venta</a>
             </li>
@@ -15,7 +15,7 @@
         <div class="clearfix"></div>
        <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
          <br>
-         <div class="col-md-12" style="margin-left: 9px;margin-right: 20px;">
+         <div class="col-md-12 col-xs-12 col-sm-12" style="margin-left: 9px;margin-right: 20px;">
            <div class="form-group" >
              <label class="control-label" for="first-name">Cliente<span class="required">*</span>
              </label>
@@ -29,7 +29,7 @@
            </div>
          </div>
            <div class="col-md-12">
-             <div class="col-md-4">
+             <div class="col-md-4 col-sm-4 col-xs-12">
                <div class="form-group">
                  <label class="control-label" for="last-name">Tipo de comprobante<span class="required">*</span>
                  </label>
@@ -42,14 +42,14 @@
                    </select>
                </div>
              </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="form-group">
                 <label class="control-label" for="last-name">Serie comprobante<span class="required">*</span>
                 </label>
                   <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
               </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="form-group">
                 <label class="control-label" for="last-name">Nùmero de comprobante<span class="required">*</span>
                 </label>
@@ -59,8 +59,8 @@
            </div>
            <div class="x_panel">
              <div class="x_content">
-               <div class="col-md-12">
-                 <div class="col-md-4">
+               <div class="col-md-12 col-sm-12 col-xs-12">
+                 <div class="col-md-4 col-sm-4 col-xs-12">
                    <div class="form-group">
                      <label class="control-label" for="last-name">Artículo<span class="required">*</span>
                      </label>
@@ -73,28 +73,28 @@
                       </select>
                    </div>
                  </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <div class="form-group">
                     <label class="control-label" for="last-name">Cantidad<span class="required">*</span>
                     </label>
                       <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                   </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <div class="form-group">
                     <label class="control-label" for="last-name">Stock<span class="required">*</span>
                     </label>
                       <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                   </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <div class="form-group">
                     <label class="control-label" for="last-name">Precio Venta<span class="required">*</span>
                     </label>
                       <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
                   </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-md-2 col-sm-2 col-xs-12">
                   <div class="form-group">
                     <label class="control-label" for="last-name">Descuento<span class="required">*</span>
                     </label>
@@ -151,10 +151,10 @@
 
            <div class="form-group">
              <center>
-               <div class="col-md-6">
+               <div class="col-md-6 col-sm-6 col-xs-6">
                  <button class="btn btn-primary col-md-6 " type="button">Cancelar</button>
                </div>
-               <div class="col-md-6">
+               <div class="col-md-6 col-sm-6 col-xs-6">
                  <button type="submit" class="btn btn-success col-md-6">Guardar</button>
                </div>
              </center>
